@@ -1,0 +1,98 @@
+.mat-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px
+    border: 3px solid rgba(168,102,206,0.45);
+}
+.mat-card#first-card {
+    padding: 0%;
+}
+
+div#profile-background {
+   
+div#perfil-fondo img {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+    display: flex;
+    z-index: 1;
+    box-sizing: border-box;
+}
+}
+.profile-image {
+    border-radius: 50%;
+    width= 192px;
+    height: 192px;
+    margin-top: -110px;
+    z-index: auto;
+}
+div#btn-pic {
+    margin-left: 12%;
+
+}
+div#info-actions {
+    display: block;
+    margin-left: 2%;
+    margin-bottom: 4%;
+}
+
+div#info-data h2 {
+    margin-top: 38px;
+    float: right;
+    font-size: 16px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-right: 0%;
+}
+ol, ul {
+    list-style-type: none;
+    margin: 0;
+    float: right;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgb(214, 224, 233);
+    border: 1px solid rgba(red, green, blue, alpha);
+    padding: 30px;
+    border-radius: 3rem;
+}
+h1 {
+    margin-top: 1rem;
+}
+div#btn-about {
+    margin-left: 95%;
+    padding-bottom: ;
+    
+}
+
+div#work-information {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    
+}
+
+div#work-study {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.container-fluid {
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+.progress{
+    width: auto;
+    
+
+}
+div#skills .btn-edit {
+    margin-left: 98%;
+    padding-bottom: 0%;
+    float: left;
+}
