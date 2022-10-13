@@ -5,8 +5,11 @@
 <title>Portfolio Javier Riquelme</title>
 <meta name="description" content="Roughly 155 characters">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css"
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap
+.min.css" rel="stylesheet" integrity="sha384-
++0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMv
+yTG2x" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -15,7 +18,7 @@
         <div id="perfil-fondo"> <img src="wallpaperflare.com_wallpaper.jpg" alt="fondo de colores azules y violetas" style="width:100% ;height:600px;"> </div>
         <div id="info" style= "padding : 16px">
             <div id="info-img">
-                <img class="profile-image" src="javierriq.png" >
+                <img class="profile-image" src="jav" >
                 <div class="btn-edit" id="btn-pic"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
             </div>
         <div id="info-data">
@@ -42,11 +45,11 @@
     <div class= "card mat-card" id="aboutof">
         <h1>Acerca de</h1>
         <div id="info-jr">Técnico de soporte en maquinas tragamonedas y ruletas. Formandose en el area de programación y diseño 3D.</div>
-        <div class="btn-edit" onclick="cambiar_parrafo()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-        <div>
-            <input id ="edit-aboutof" type="text" oninput ="myFunction2(this.value)" style="display:none;">
-         </div>
-         <input type="file" id="file1" onchange="showFile(this);" > 
+        <div class="btn-edit" id="btn-about" onclick="cambiar_parrafo()"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+       </div>
+       <div>
+       <input id ="edit-aboutof" type="text" oninput ="myFunction2(this.value)" style="display:none;">
+    </div>
     </div>
 
     <div class="card mat-card" id="workexp">
@@ -107,50 +110,18 @@
         <div class="btn-edit" id="btn-diseño"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
         <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-trash"></i></a></div>
     </div>
-    <script> 
-    
-    //funcion que 
-    //cambia el estilo del input a visible
-    //toma el valor del texto del parrafo como id "info-jr"
-    //lo muestra en consola
-    function cambiar_parrafo(){
-        document.getElementById("edit-aboutof").style.display="block";
-        let texto = document.getElementById ("info-jr").innerText;
-        console.log(texto);
-    };
-        function myFunction2(valor){
-            document.getElementById ("info-jr").innerText = valor;
-        }
-        function logMessage(message) {
-            console.log(message + "<br>");
-        }
-        //controla si se presiona enter 
-        let textarea = document.getElementById ("edit-aboutof")
-        textarea.addEventListener ("keyup", (e) => {
-            logMessage ( `Key "${e.key}" released [evente : keyup]` );
-            if (e.key== "Enter"){
-                document.getElementById ("edit-aboutof").style.display="none"
-            }
-        });
-
-        
-        //carga el contenido de un archivo de texto 
-        //y lo muestra en el parrafo
-
-        function showFile (input) {
-            let file = input.files[0]; 
-            alert('File name: ${file.name}'); //e g my png
-            reader.readAsText(file);
-            reader.onload = function() {
-                console.log(reader.result);
-                document.getElementById("info-jr").innerText = reader.result;
-            };
-            reader.onerror = function() {
-                console.log(reader.error);
-            };
-        }
-    </script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script></body>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.
+    bundle.min.js" integrity="sha384-
+    gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" cros
+    sorigin="anonymous">
+</script>
+<script>
+function cambiar_parrafo(){
+    document.getElementById ("edit-aboutof").style.display="block";
+    let text = document.getElementById ("info-jr").innerText;
+    console.log(text);
+} </script>
+</body>
     
 </body>
 </html>
